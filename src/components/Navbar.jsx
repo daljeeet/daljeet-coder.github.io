@@ -12,7 +12,7 @@ const Navbar = () => {
    window.addEventListener("scroll", position);
    (scrl>320)?setBg(true):setBg(false)
   }, [scrl])
-    const navs = ["About", "Tech Stack", "Skills","Projects", "Contact"]
+    const navs = ["About", "Skills","Projects", "Contact"]
   return (
     <div className={`z-50 fixed w-full ${bg?'bg-darkbg':'bg-transparent'}`} >
     <div className='h-12 flex  w-10/12 m-auto items-center' >

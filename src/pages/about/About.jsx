@@ -1,10 +1,21 @@
 import React from 'react'
-
+import my_photo from '../../images/Profile.jpg'
 const About = () => {
   return (
-    <div id='about' >
-        <h1>About</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium necessitatibus debitis doloribus excepturi alias fugiat, optio ab laboriosam vero aspernatur sed fugit expedita sequi quibusdam dolores esse quis, ex repellendus a obcaecati officia nulla. Aut adipisci rerum obcaecati, minus ratione corporis iusto rem. Ullam rerum iure amet enim optio et veniam, delectus ab corrupti modi error alias harum ipsa dolorem, nam quaerat necessitatibus iusto cumque repellat accusamus vitae beatae perspiciatis impedit dolor? Adipisci rem amet iure temporibus, magni officiis perferendis eligendi aspernatur et autem eum at deserunt! Ea quas, corporis quae atque voluptatibus, neque perferendis ducimus nesciunt doloremque et deserunt veniam, autem optio? Laborum architecto blanditiis voluptas quas dolor molestiae eaque voluptatem sunt alias. Commodi odit magni minima earum non ut recusandae quisquam voluptas dolores perspiciatis eligendi quo, eius alias quasi et autem repellat nulla numquam placeat maxime. Possimus quam doloremque, quas totam quis aliquid laudantium unde maxime numquam adipisci iure impedit eveniet voluptatibus quibusdam, harum voluptates odio pariatur vitae quod? Quisquam est, nulla dolorum itaque porro quas architecto doloremque placeat iure dolor possimus ullam nobis at laborum modi quis. Ab accusamus quod accusantium provident aliquid distinctio dolore suscipit itaque tempora pariatur? Hic cupiditate quasi culpa ipsa facilis officiis voluptates quas, minus rem, tempora libero soluta sunt fugit accusantium eveniet maxime quae corrupti illum incidunt unde exercitationem dicta tempore. Delectus fuga vel quo quis qui velit at, laudantium sunt blanditiis aliquid repellat, saepe ex repellendus voluptatum, eius dolorem doloribus? At suscipit et, labore fugiat necessitatibus aliquam architecto optio nulla eum minima totam veritatis inventore laboriosam, laborum, fugit qui quia eius soluta reprehenderit nemo. Tempore omnis vitae excepturi laborum dolorem perferendis ullam, eligendi mollitia deserunt fugiat, dolores voluptatum nihil error labore. Debitis enim aut deserunt recusandae, saepe dolore minus accusamus nihil doloremque esse vel impedit ipsum est nemo molestias tenetur magni consequuntur suscipit distinctio quam. Neque incidunt ea quo nobis veniam porro qui quae deleniti alias, ducimus itaque quam temporibus provident. Illo repudiandae hic architecto, neque iusto cum harum porro rerum quis praesentium non. Fugit similique quibusdam, placeat perspiciatis cupiditate odio magni quam sit veniam eius quae inventore necessitatibus incidunt eaque possimus laboriosam. Odit dicta nihil adipisci molestias, mollitia, facere sint sapiente omnis odio vitae sed! Architecto animi deleniti quae illo labore vero sed fugiat eligendi dignissimos mollitia, repellat laboriosam quia reprehenderit rem corrupti non debitis, minus sunt magnam temporibus nobis rerum distinctio. Iste harum atque fugit repellat dignissimos, iure laborum nulla ipsum vitae laboriosam at similique, quia eius assumenda beatae in vero quo obcaecati commodi quaerat quis velit modi ab eaque. Ab odit magni libero dolorem perferendis voluptas quae voluptates iusto dicta quia magnam laboriosam facilis est accusamus ratione iste quasi nulla iure adipisci a temporibus quis, harum recusandae? Veritatis sit provident repudiandae corporis praesentium maiores ducimus quaerat in quam minus. Veritatis eaque at omnis perspiciatis aliquam praesentium cum asperiores, incidunt necessitatibus quae tempora quaerat iste tempore eveniet placeat. Nam aliquam perspiciatis, molestiae itaque asperiores facilis sint beatae non qui fugiat esse magni laboriosam sit maxime quidem unde nostrum consequuntur!</p>
+    <div id='about' className='w-5/6 m-auto text-center border-2 mt-32 p-4' >
+        <h1>About Me </h1>
+        <div className='flex items-center ' >
+      <div className='w-1/4' >
+        <img src={my_photo} alt="about me p" className='rounded-full' />
+      </div>
+       <div className='w-3/4 flex flex-col justify-center'>
+        <p className='text-gray-200 font-semibold w-5/6 my-6'>MERN stack Developer with Ability to learn and collaborate in Rapidly changing environments and compositions. Fast Learner having 1500+ hours coding Bootcamp strecture of JavaScript, React, Html, CSS, TypeScript, Node, Express, MongoDB and more. </p>
+        <div className='flex w-5/6' >
+          <h4 className='mx-12'>Technical Skills</h4>
+          <h4>Soft Skills</h4>
+        </div>
+       </div>
+        </div>
     </div>
   )
 }

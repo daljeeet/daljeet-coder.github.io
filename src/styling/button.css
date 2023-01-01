@@ -2,7 +2,7 @@
     top: 0;
     left: -100%;
     width: 100%;
-    height: 2px;
+    height: 4px;
     background: linear-gradient(90deg, transparent, #ff0000);
 }
 
@@ -15,7 +15,7 @@
     bottom: 0;
     right: -100%;
     width: 100%;
-    height: 2px;
+    height: 4px;
     background: linear-gradient(270deg, transparent, #ff0000);
 }
 
@@ -28,7 +28,7 @@
 .neon span:nth-child(2) {
     top: -100%;
     right: 0;
-    width: 2px;
+    width: 4px;
     height: 100%;
     background: linear-gradient(180deg, transparent, #ff0000);
 }
@@ -42,7 +42,7 @@
 .neon span:nth-child(4) {
     bottom: -100%;
     left: 0;
-    width: 2px;
+    width: 4px;
     height: 100%;
     background: linear-gradient(360deg, transparent, #ff0000);
 }
