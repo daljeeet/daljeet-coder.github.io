@@ -1,10 +1,8 @@
 import React from "react";
-import welImg from "../../images/welcome.png";
+import welImg from "../../images/me.png";
 import WaveBg from "../../components/WaveBg";
 import Hero from "./Hero";
 import "../../styling/hero.css";
-// import NeonBtn from '../../components/NeonBtn'
-import { BsDownload } from "react-icons/bs";
 const Home = () => {
   return (
     <>
@@ -17,15 +15,14 @@ const Home = () => {
 
             <div className="mt-10">
               <button
-                className={`neon ml-10 rounded-xl relative overflow-hidden py-1 px-2 text-black`}
+                className={`neon ml-10 border-2 rounded-xl relative overflow-hidden py-1 px-2 text-black`}
               >
                 <span className="absolute block"></span>
                 <span className="absolute block"></span>
                 <span className="absolute block"></span>
                 <span className="absolute block"></span>
                 <h4 className="flex px-2 font-semibold text-lg">
-                  <BsDownload className="mr-3" />
-                  Resume
+                  Explore...
                 </h4>
               </button>
             </div>

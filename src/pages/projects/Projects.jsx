@@ -1,12 +1,110 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import "./project.css";
+import cultfitImg from "../../images/cultfit.png";
+import dpdzines from '../../images/dpdzines.png'
+import engage from '../../images/engage.png'
+import ProjectCards from "./ProjectCards";
 
 const Projects = () => {
-  return (
-    <div id='projects' className='w-5/6 m-auto border-2 mt-20' >
-        <h1>Projects</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore provident quod praesentium adipisci vel? Quisquam nam fuga delectus illo nostrum aliquam debitis, itaque quasi veritatis molestiae maiores voluptate quod magni! Molestiae voluptates animi corporis alias deleniti laboriosam iusto illo, quasi error dolorum ullam blanditiis rerum eligendi fugit placeat nulla tenetur minima facilis illum, repudiandae voluptatibus consequatur! Nam omnis laborum eligendi nostrum in sequi quidem, sint unde iure fuga totam vitae sunt repellendus molestias, minima ducimus! Aut perferendis obcaecati delectus saepe rerum quidem maiores accusantium ipsa id eum vero facilis ducimus recusandae, placeat incidunt sunt veritatis magni maxime consequuntur expedita qui assumenda officia. Veniam iure, omnis alias, est incidunt ex eligendi adipisci officiis nam deserunt exercitationem, reprehenderit consequuntur? Blanditiis, corporis fuga. Quod eveniet dolore adipisci perferendis necessitatibus quibusdam nobis laboriosam alias error modi iste neque natus earum eum dolor doloremque delectus, minus, fugiat ad, pariatur cum sint quia. Temporibus earum quidem dolore, doloremque pariatur aliquid eum voluptatem saepe consectetur fuga ratione optio ipsum ipsam corrupti provident in dignissimos tenetur impedit similique quo excepturi culpa delectus dolores numquam! Quam sapiente molestiae cumque beatae optio dolorem accusamus nobis dolores delectus! Ab voluptas aliquid aperiam, ullam voluptatem optio fugiat inventore est voluptatum explicabo possimus quis quam itaque qui velit veniam quod eos sed quasi earum quos eligendi. Ullam incidunt necessitatibus nemo inventore culpa perspiciatis corrupti ratione praesentium. Facilis repudiandae perferendis, sunt ea, sequi necessitatibus, laudantium voluptatibus reiciendis laboriosam nobis magni earum perspiciatis dicta ratione deleniti illum culpa quas. Inventore voluptas nihil, perferendis quo fugit eveniet facere ipsa necessitatibus quam ratione ea commodi odit repellat, unde totam aliquid. Odio ut quos provident hic esse sequi laudantium asperiores omnis enim aspernatur, aliquam illum voluptates. Iusto qui suscipit commodi esse eligendi et excepturi aperiam dolorem, reiciendis eum quaerat sed illum ipsa facere libero dicta illo rerum fuga, eius ad? Fugit adipisci possimus totam est architecto necessitatibus, minima nihil pariatur alias non voluptatem facere in ad repellendus vel a cumque tenetur nobis minus sunt, nostrum voluptas laborum? Suscipit incidunt asperiores accusamus nobis fuga eos error in dignissimos tenetur. Tempore delectus velit, aspernatur maiores cupiditate voluptates aliquid esse incidunt adipisci optio ut, culpa suscipit dolor possimus sapiente, qui quaerat magni non cumque. Laboriosam, aperiam quasi dolor ducimus nihil facilis doloremque quos numquam est officia optio sit porro id modi perspiciatis nobis reiciendis iste laborum vel unde! Inventore ipsa facere veritatis amet, alias molestias laboriosam adipisci fugit nulla obcaecati ipsam.</p>
-    </div>
-  )
-}
+  useEffect(() => {
+    animate();
+  }, []);
+  const animate = () => {
+    const cards = document.querySelector(".cards");
+    const images = document.querySelectorAll(".card__img");
+    const backgrounds = document.querySelectorAll(".card__bg");
+    const range = 40;
 
-export default Projects
+    // const calcValue = (a, b) => (((a * 100) / b) * (range / 100) -(range / 2)).toFixed(1);
+    const calcValue = (a, b) => ((a / b) * range - range / 2).toFixed(1); // thanks @alice-mx
+
+    let timeout;
+    let projectSec = document.getElementById("projects");
+    projectSec.addEventListener(
+      "mousemove",
+      ({ x, y }) => {
+        if (timeout) {
+          window.cancelAnimationFrame(timeout);
+        }
+        timeout = window.requestAnimationFrame(() => {
+          const yValue = calcValue(y, window.innerHeight);
+          const xValue = calcValue(x, window.innerWidth);
+
+          cards.style.transform = `rotateX(${yValue}deg) rotateY(${xValue}deg)`;
+
+          [].forEach.call(images, (image) => {
+            image.style.transform = `translateX(${-xValue}px) translateY(${yValue}px)`;
+          });
+
+          [].forEach.call(backgrounds, (background) => {
+            background.style.backgroundPosition = `${xValue * 0.45}px ${
+              -yValue * 0.45
+            }px`;
+          });
+        });
+      },
+      false
+    );
+  };
+  return (
+    <div
+      id="projects"
+      className="w-5/6 m-auto flex-col text-center over-flow-hidden "
+    >
+      <h1 className="my-10">Projects</h1>
+      <div className="cards bg-lightbg rounded-2xl shadow-2xl py-4 px-8 text-left origin-center">
+        <h3>My projects </h3>
+        <div className="flex">
+        <ProjectCards project={cultfitImg} name="CultFit.com-clone" />
+        <div className="card card__two">
+          <div className="card__bg"></div>
+          <img src={cultfitImg} alt="" />
+          <div className="card__text">
+            <p className="card__title">CultFit-clone</p>
+          </div>
+        </div>
+        </div>
+        <div className="flex my-6">
+        <div className="card card__one">
+        <ProjectCards project={dpdzines} name="dpDzines.com" />
+        </div>
+        <div className="card card__three">
+          <div className="card__bg"></div>
+          <img src={cultfitImg} alt="" />
+          <div className="card__text">
+            <p className="card__title">dpDzines.com</p>
+          </div>
+        </div>
+        </div>
+        <div className="flex my-6">
+        <div className="card card__one">
+          <ProjectCards project={engage} name="Engagebay.com -clone" />
+        </div>
+        <div className="card card__three">
+          <div className="card__bg"></div>
+          <img src={cultfitImg} alt="" />
+          <div className="card__text">
+            <p className="card__title">dpDzines.com</p>
+          </div>
+        </div>
+        </div>
+        {/* <div className="card card__two">
+    <div className="card__bg"></div>
+    <img className="card__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_chihiro.png" alt='' />
+    <div className="card__text">
+      <p className="card__title">Spirited Away</p>
+    </div>
+  </div> */}
+        {/* <div className="card card__three">
+    <div className="card__bg"></div>
+    <img className="card__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_howlcastle.png" alt='' />
+    <div className="card__text">
+      <p className="card__title">Howl's Moving Castle</p>
+    </div>
+  </div> */}
+      </div>
+    </div>
+  );
+};
+
+export default Projects;

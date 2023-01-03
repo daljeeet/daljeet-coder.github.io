@@ -7,7 +7,7 @@ const Hero = () => {
   useEffect(() => {
     animate();
   },[]);
-  let data = " a passionate Full Stack Web Developer who focus on writing clean and user friendly applications"
+  let data = "A MERN stack Developer with Ability to learn and collaborate in Rapidly changing environments and compositions."
   let a = 0,
     pArray = data.split('')
   var animate = function () {
@@ -31,7 +31,7 @@ const Hero = () => {
        I am Daljeet Singh
       </p>
       <div className="set w-5/6 m-auto mt-4 relative">
-        <p className="text-darkbg font-bold text-base " data-place="a passionate Full Stack Web Developer who focus on writing clean and user friendly applications">
+        <p className="text-white font-bold text-sm " data-place="MERN stack Developer with Ability to learn and collaborate in Rapidly changing environments and compositions.">
         </p>
       </div>
     </div>

@@ -6,15 +6,12 @@ import './pages/home/Hero.jsx'
 import Skills from './pages/skills/Skills'
 import Projects from './pages/projects/Projects'
 import Contact from './pages/contact/Contact'
-import About from './pages/about/About'
 
 export default function App() {
   return (
     <div className='bg-darkbg text-fontcolor' >
       <Navbar/>
       <Home/>
-      <About />
-      {/* <TechStack /> */}
       <Skills />
       <Projects />
       <Contact />
