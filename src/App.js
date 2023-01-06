@@ -6,6 +6,8 @@ import './pages/home/Hero.jsx'
 import Skills from './pages/skills/Skills'
 import Projects from './pages/projects/Projects'
 import Contact from './pages/contact/Contact'
+import Footer from './pages/Footer'
+import GitStatus from './pages/GitStatus'
 
 export default function App() {
   return (
@@ -14,7 +16,9 @@ export default function App() {
       <Home/>
       <Skills />
       <Projects />
-      <Contact />
+      {/* <GitStatus/>
+      <Contact /> */}
+      <Footer/>
     </div>
   )
 }

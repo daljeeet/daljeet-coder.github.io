@@ -1,10 +1,12 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useEffect } from "react";
 import "./project.css";
 import cultfitImg from "../../images/cultfit.png";
-import dpdzines from '../../images/dpdzines.png'
-import engage from '../../images/engage.png'
+import dpdzines from "../../images/dpdzines.png";
+import engage from "../../images/engage.png";
 import ProjectCards from "./ProjectCards";
-
+import movieapp from "../../images/movieapp.png";
+import mailchimp from "../../images/mailchimp.png";
 const Projects = () => {
   useEffect(() => {
     animate();
@@ -49,59 +51,69 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-5/6 m-auto flex-col text-center over-flow-hidden "
+      className="w-11/12 m-auto flex-col text-center over-flow-hidden "
     >
       <h1 className="my-10">Projects</h1>
       <div className="cards bg-lightbg rounded-2xl shadow-2xl py-4 px-8 text-left origin-center">
         <h3>My projects </h3>
         <div className="flex">
-        <ProjectCards project={cultfitImg} name="CultFit.com-clone" />
-        <div className="card card__two">
-          <div className="card__bg"></div>
-          <img src={cultfitImg} alt="" />
-          <div className="card__text">
-            <p className="card__title">CultFit-clone</p>
+          <ProjectCards project={cultfitImg} name="CultFit.com-clone" />
+          <div className="card card__two">
+            <div className="card__bg"></div>
+            <img src={cultfitImg} alt="" />
+            <div className="card__text">
+              <p className="card__title">CultFit-clone</p>
+            </div>
           </div>
-        </div>
         </div>
         <div className="flex my-6">
-        <div className="card card__one">
-        <ProjectCards project={dpdzines} name="dpDzines.com" />
-        </div>
-        <div className="card card__three">
-          <div className="card__bg"></div>
-          <img src={cultfitImg} alt="" />
-          <div className="card__text">
-            <p className="card__title">dpDzines.com</p>
+          <div className="card card__one">
+            <ProjectCards project={dpdzines} name="dpDzines.com" />
           </div>
-        </div>
+          <div className="card card__three">
+            <div className="card__bg"></div>
+            <img src={cultfitImg} alt="" />
+            <div className="card__text">
+              <p className="card__title">dpDzines.com</p>
+            </div>
+          </div>
         </div>
         <div className="flex my-6">
-        <div className="card card__one">
-          <ProjectCards project={engage} name="Engagebay.com -clone" />
-        </div>
-        <div className="card card__three">
-          <div className="card__bg"></div>
-          <img src={cultfitImg} alt="" />
-          <div className="card__text">
-            <p className="card__title">dpDzines.com</p>
+          <div className="card card__one">
+            <ProjectCards project={engage} name="Engagebay.com -clone" />
+          </div>
+          <div className="card card__three">
+            <div className="card__bg"></div>
+            <img src={cultfitImg} alt="" />
+            <div className="card__text">
+              <p className="card__title">dpDzines.com</p>
+            </div>
           </div>
         </div>
+        <div className="flex my-6">
+          <div className="card card__one">
+            <ProjectCards project={movieapp} name="Engagebay.com -clone" />
+          </div>
+          <div className="card card__three">
+            <div className="card__bg"></div>
+            <img src={cultfitImg} alt="" />
+            <div className="card__text">
+              <p className="card__title">dpDzines.com</p>
+            </div>
+          </div>
         </div>
-        {/* <div className="card card__two">
-    <div className="card__bg"></div>
-    <img className="card__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_chihiro.png" alt='' />
-    <div className="card__text">
-      <p className="card__title">Spirited Away</p>
-    </div>
-  </div> */}
-        {/* <div className="card card__three">
-    <div className="card__bg"></div>
-    <img className="card__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_howlcastle.png" alt='' />
-    <div className="card__text">
-      <p className="card__title">Howl's Moving Castle</p>
-    </div>
-  </div> */}
+        <div className="flex my-6">
+          <div className="card card__one">
+            <ProjectCards project={mailchimp} name="Engagebay.com -clone" />
+          </div>
+          <div className="card card__three">
+            <div className="card__bg"></div>
+            <img src={mailchimp} alt="" />
+            <div className="card__text">
+              <p className="card__title">dpDzines.com</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
