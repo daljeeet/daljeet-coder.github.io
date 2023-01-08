@@ -17,14 +17,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`z-50 w-full fixed md:p-4 shadow-xl ${
+      className={`z-50 w-full fixed top-0 md:py-4 shadow-xl ${
         bg ? "bg-darkbg" : "bg-transparent"
       }`}
     >
-      <div className="md:w-5/6 m-auto flex items-center md:justify-between flex-col md:flex-row items-center ">
-        <div className="flex items-center flex-no-shrink text-fontcolor mr-6">
+      <div className={`md:w-5/6 m-auto flex items-center md:justify-between flex-col md:flex-row items-center ${menu?"":`${bg?"":"md:bg-transparent bg-darkbg/70"}`} `}>
+        <div className="flex py-4 md:py-0 items-center flex-no-shrink text-fontcolor mr-6">
           <Link
-          onClick={()=>setMenu(!menu)}
+          onClick={()=>setMenu(true)}
             activeClass="active"
             className="cursor-pointer font-semibold text-xl tracking-tight"
             to="home"
@@ -55,50 +55,47 @@ const Navbar = () => {
           </div>
         </div>
         <div
-          className={`w-full flex-grow flex-col justify-center align-center md:flex md:flex-row md:w-auto overflow-hidden ${menu?"animate-wigle hidden md:animate-none":`animate-wiggle flex ${
-                  bg ? "" : "bg-darkbg/70"
-                }  md:bg-transparent md:animate-none`
-          }`}
+          className={`w-full text-center md:flex-grow md:flex flex-col md:flex-row md:w-auto overflow-hidden ${menu?"animate-wigle hidden md:animate-none":`animate-wiggle flex md:animate-none`} `}
         >
           <div className="text-sm md:items-center md:flex md:flex-grow">
             <Link
-            onClick={()=>setMenu(!menu)}
+            onClick={()=>setMenu(true)}
               to="skills"
               activeClass="text-red-700"
               spy={true}
               smooth={true}
               offset={-80}
               duration={600}
-              className="w-28 font-bold text-gray-300 cursor-pointer block mt-4 md:mt-0 hover:text-white"
+              className="w-28 mx-auto md:mx-0 font-bold text-gray-300 cursor-pointer block mt-4 md:mt-0 hover:text-white"
             >
               Skills
             </Link>
             <Link
-            onClick={()=>setMenu(!menu)}
+            onClick={()=>setMenu(true)}
               to="projects"
               activeClass="text-red-200"
               spy={true}
               smooth={true}
               offset={-80}
               duration={600}
-              className="w-28 font-bold text-gray-300 cursor-pointer block mt-4 md:inline-block md:mt-0 text-teal-lighter hover:text-white"
+              className="w-28 mx-auto md:mx-0 font-bold text-gray-300 cursor-pointer block mt-4 md:inline-block md:mt-0 text-teal-lighter hover:text-white"
             >
               Projects
             </Link>
             <Link
-            onClick={()=>setMenu(!menu)}
+            onClick={()=>setMenu(true)}
               to="contact"
               activeClass="text-red-200"
               spy={true}
               smooth={true}
               offset={-80}
               duration={600}
-              className="w-28 font-bold text-gray-300 cursor-pointer block mt-4 md:inline-block md:mt-0 text-teal-lighter hover:text-white"
+              className="w-28 font-bold mx-auto md:mx-0 text-gray-300 cursor-pointer block mt-4 md:inline-block md:mt-0 text-teal-lighter hover:text-white"
             >
               Contact
             </Link>
           </div>
-          <div className="my-2 md:my-auto">
+          <div className="my-2 mx-auto md:mx-0 md:my-auto">
             <NeonBtn text={"Resume"} />
           </div>
         </div>

@@ -30,8 +30,8 @@ const Hero = () => {
       >
        I am Daljeet Singh
       </p>
-      <div className="set w-full md:w-5/6 m-auto mt-2 relative">
-        <p className="text-fontcolor font-bold text-sm " data-place="MERN stack Developer with Ability to learn and collaborate in Rapidly changing environments and compositions.">
+      <div className="set w-5/6 m-auto mt-2 relative">
+        <p className="text-fontcolor md:font-semibold text-sm " data-place="MERN stack Developer with Ability to learn and collaborate in Rapidly changing environments and compositions.">
         </p>
       </div>
     </div>

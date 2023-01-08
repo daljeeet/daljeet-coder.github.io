@@ -6,7 +6,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "darkbg": '#152D40',
+        "gradf":"#005C97",
+        "grads":"#363795",
+        // "wave1":"#168ed2",
+        // "wave2":"#152D40",
+        // "wave3":"#152D40",
+        // "wave4":"#152D40",
+        // "wave5":"#152D40",
+        // "wave6":"#152D40",
+        "darkbg":"#152D40",
         "lightbg":"#225D8A",
         "fontcolor":"#F4FAFF"
       },animation: {
