@@ -55,7 +55,7 @@ const Navbar = () => {
           </div>
         </div>
         <div
-          className={`w-full text-center md:flex-grow md:flex flex-col md:flex-row md:w-auto overflow-hidden ${menu?"animate-wigle hidden md:animate-none":`animate-wiggle flex md:animate-none`} `}
+          className={`w-full text-center md:flex-grow md:flex flex-col md:flex-row md:w-auto overflow-hidden ${menu?"animate-wiggle duration-200 md:h-auto h-0 md:animate-none":`animate-in slide-in-from-top flex md:animate-none`} `}
         >
           <div className="text-sm md:items-center md:flex md:flex-grow">
             <Link

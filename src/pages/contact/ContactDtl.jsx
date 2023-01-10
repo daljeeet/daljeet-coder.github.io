@@ -12,44 +12,44 @@ import {IoLogoWhatsapp} from 'react-icons/io'
 
 const ContactDtl = () => {
   return (
-    <div className="flex flex-col w-full border-2 border-darkbg p-2 rounded-xl ">
-      <h3 className="w-fit my-8 border-b-2 border-darkbg text-xl p-2 ">
+    <div className="flex bg-black/20 flex-col w-full border-2 shadow-xl items-center border-darkbg p-2 rounded-xl ">
+      <h3 className="w-fit my-8 border-b-2 border-darkbg text-xl p-2 text-center">
         Have an Idea, or a Project to Discuss? <br />
         Reach Out to me.
       </h3>
       <div className="w-full px-6" >
-        <div className="flex my-2 text-base ">
+        <div className="flex justify-center items-center my-2 text-base ">
           <a
             href="#"
             target="_blank"
-            className=" mx-8 text-darkbg text-4xl my-2"
+            className=" mr-6 text-darkbg text-4xl my-2"
           >
-            <IoLocationSharp />
+            <IoLocationSharp className="text-fontcolor" />
           </a>
-          <h5 className="w-5/6 text-left text-md">Nainital, Uttrakhand</h5>
+          <h5 className="sm:w-11/12 md:w-1/2 text-center text-sm sm:text-md">Nainital, Uttrakhand</h5>
         </div>
-        <div className="flex my-2 text-base ">
+        <div className="flex justify-center items-center my-2 text-base">
           <a
             href="#"
             target="_blank"
-            className=" mx-8 text-darkbg text-4xl my -2"
+            className="mr-6 text-darkbg text-4xl my -2"
           >
-            <IoMail />
+            <IoMail className="text-fontcolor" />
           </a>
-          <h5 className="w-5/6 text-left ">daljeetsingh.chamiyal@gmail.com</h5>
+          <h5 className="sm:w-11/12 md:w-1/2 text-center text-sm sm:text:base ">daljeetsingh.chamiyal@gmail.com</h5>
         </div>
-        <div className="flex my-2 text-base ">
+        <div className="flex justify-center items-center my-2 text-base ">
           <a
             href="#"
             target="_blank"
-            className=" mx-8 text-darkbg text-4xl my-2"
+            className=" mr-6 text-darkbg text-4xl my-2"
           >
-            <IoIosPhonePortrait />
+            <IoIosPhonePortrait className="text-fontcolor" />
           </a>
-          <h5 className="w-5/6 text-left "> +91-8954379385 </h5>
+          <h5 className="sm:w-11/12 md:w-1/2 text-center text:sm sm:text:base "> +91-8954379385 </h5>
         </div>
       </div>
-      <div className="w-full my-4 py-4 flex" >
+      <div className="w-full my-4 py-4 flex justify-evenly" >
         <TfiLinkedin className="mx-4 text-3xl cursor-pointer"/>
         <VscGithub className="mx-4 text-3xl cursor-pointer"/>
         <TfiTwitterAlt className="mx-4 text-3xl cursor-pointer"/>

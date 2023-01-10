@@ -15,9 +15,9 @@ export default function App() {
       <Navbar/>
       <Home/>
       <Skills />
+      <GitStatus/>
       <Projects />
-      {/* <GitStatus/>
-      <Contact /> */}
+      <Contact />
       <Footer/>
     </div>
   )

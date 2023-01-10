@@ -6,10 +6,10 @@
 .parent {
     margin: 0;
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
     align-items: center;
     justify-content: center;
-    background-color: #e0ccb4;
+    background-color: transparent;
     -webkit-tap-highlight-color: transparent;
     transition: background-color var(--duration);
 }
@@ -17,7 +17,6 @@
 .menu__item {
     all: unset;
     flex-grow: 1;
-    z-index: 100;
     display: flex;
     cursor: pointer;
     position: relative;
@@ -72,14 +71,8 @@
 }
 
 .menu__border {
-    left: 0;
-    bottom: 99%;
-    width: 10.9em;
-    height: 2.4em;
-    position: absolute;
     clip-path: url(#menu);
     will-change: transform;
-    background: white;
     transition: transform var(--timeOut, var(--duration));
 }
 
@@ -90,6 +83,6 @@
 
 @media screen and (max-width: 50em) {
     .menu {
-        font-size: .8em;
+        font-size: 0.8em;
     }
 }
