@@ -81,9 +81,9 @@ const handleSkill= (e)=>{
   }
 }
   return (
-  <div className='sparent flex md:flex-col'>
-  <div className='parent h-fit w-20 md:w-full '>
-  <menu className="menu animate-in slide-in-from-bottom-20 duration-1000 h-fit md:h-20 m-0 w-20 md:w-full flex-col md:flex-row md:flex relative items-center justify-center px-4 md:p-2 rounded-md bg-gray-500/20 pt-10 shadow-xl">
+  <div className='sparent flex flex-col'>
+  <div className='parent h-fit w-full '>
+  <menu className="menu flex-wrap animate-in slide-in-from-bottom-20 duration-1000 h-fit md:h-20 w-full flex relative items-center justify-center px-4 md:p-2 rounded-md bg-gray-500/20 pt-10 shadow-xl">
     <button onClick={handleSkill} name='HTML' className="menu__item active z-1"  ><img name='HTML' className ='w-10 rounded-full my-4 border-[1px] border-darkbg h-10' src="https://user-images.githubusercontent.com/80110392/210499593-ca8b2ba2-c9c1-40d9-b358-a99e3ab2b4bc.svg" alt="htmlImage" />
     </button>
     <button onClick={handleSkill} name='CSS' className="menu__item">

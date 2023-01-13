@@ -8,18 +8,13 @@ module.exports = {
       colors: {
         "gradf":"#005C97",
         "grads":"#363795",
-        // "wave1":"#168ed2",
-        // "wave2":"#152D40",
-        // "wave3":"#152D40",
-        // "wave4":"#152D40",
-        // "wave5":"#152D40",
-        // "wave6":"#152D40",
+        "macLight":"#8AB4D9",
         "darkbg":"#152D40",
         "lightbg":"#225D8A",
-        "fontcolor":"#F4FAFF"
+        "fontcolor":"#F4FAFf"
       },
       animation: {
-        loading: 'loading 25s linear infinite',
+        loading: 'loading 10s linear infinite',
         wiggle: 'wiggle 0.5s ease-in-out',
         width: 'width 1s ease-in-out',
       },

@@ -2,7 +2,7 @@ import React from 'react'
 
 const MongoSkill = () => {
   return (
-    <div className='animate-in slide-in-from-bottom-20 duration-1000 mt-72 md:mt-4 md:mt-2 '>
+    <div className='animate-in slide-in-from-bottom-20 duration-1000 mt-1'>
     <h2 className='font-semibold my-2'>MongoDB  - 1%</h2>
     <div className='border-2 border-lightbg w-1/2 m-auto h-3 my-2 rounded-full bg-lightbg'> <div className='bg-white w-2 animate-width h-full rounded-full'></div></div>
     <ul className='w-5/6 md:w-1/2 m-auto list-disc text-left text-sm'>

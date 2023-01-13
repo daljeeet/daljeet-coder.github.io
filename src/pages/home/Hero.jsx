@@ -24,13 +24,15 @@ const Hero = () => {
   };
   return (
     <div className="w-full flex flex-col h-11/12 overflow-hidden align-center items-center ">
+      <div className="relative h-10 w-1/2 mt-2" >
       <p
-        className={`font-bold color-gray-500 text-lg before:content-[attr(before)] before:absolute before:overflow-hidden before:whitespace-nowrap before:max-w-full before:text-white before:animate-loading my-2`}
-        before="I am Daljeet Singh"
-      >
+        className={`font-bold text-darkbg tracking-wide absolute left-[20%] top-[4%] color-gray-500 text-lg before:content-[attr(before-all)] before:absolute before:overflow-hidden before:whitespace-nowrap before:max-w-full before:text-fontcolor before:animate-loading`}
+        before-all="I am Daljeet Singh"
+        >
        I am Daljeet Singh
       </p>
-      <div className="set w-5/6 m-auto mt-2 relative">
+        </div>
+      <div className="set w-5/6 m-auto mt-2">
         <p className="text-fontcolor md:font-semibold text-sm " data-place="MERN stack Developer with Ability to learn and collaborate in Rapidly changing environments and compositions.">
         </p>
       </div>
