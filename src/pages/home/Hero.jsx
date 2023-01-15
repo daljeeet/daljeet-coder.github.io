@@ -24,9 +24,9 @@ const Hero = () => {
   };
   return (
     <div className="w-full flex flex-col h-11/12 overflow-hidden align-center items-center ">
-      <div className="relative h-10 w-1/2 mt-2" >
+      <div className="relative text-center h-10 w-5/6 mt-2" >
       <p
-        className={`font-bold text-darkbg tracking-wide absolute left-[20%] top-[4%] color-gray-500 text-lg before:content-[attr(before-all)] before:absolute before:overflow-hidden before:whitespace-nowrap before:max-w-full before:text-fontcolor before:animate-loading`}
+        className={`font-bold text-darkbg tracking-wide absolute md:left-[30%] top-[4%] color-gray-500 text-lg before:content-[attr(before-all)] before:absolute before:overflow-hidden before:whitespace-nowrap before:max-w-full before:text-fontcolor before:animate-loading`}
         before-all="I am Daljeet Singh"
         >
        I am Daljeet Singh

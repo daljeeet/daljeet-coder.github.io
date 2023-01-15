@@ -4,7 +4,8 @@
     initial-value: 0deg;
 }
 
-.frame {
+.frame,
+.mob {
     border: none;
     border-radius: 20px;
     position: relative;
@@ -36,16 +37,22 @@
 } */
 
 .frame:before,
-.frame:after {
+.mob::before {
     transition: 2s, 99999s 99999s transform, 99999s 99999s --d;
 }
 
-.outer:hover .frame:after {
+
+/* .outer:hover .frame:after {
     transform: rotate(3600deg);
     transition: .5s, 60s linear transform;
-}
+} */
 
 .outer:hover .frame:before {
+    --d: 3600deg;
+    transition: .5s, 60s linear --d;
+}
+
+.outer:hover .mob:before {
     --d: 3600deg;
     transition: .5s, 60s linear --d;
 }

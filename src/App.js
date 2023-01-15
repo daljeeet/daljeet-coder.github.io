@@ -8,7 +8,11 @@ import Projects from './pages/projects/Projects'
 import Contact from './pages/contact/Contact'
 import Footer from './pages/Footer'
 import GitStatus from './pages/GitStatus'
-
+// import WorkBook from './book_modal/WorkBook'
+export const dark1 = {
+  dark:"#152D40",
+  light:"#225D8A"
+}
 export default function App() {
   return (
     <div className='bg-darkbg text-fontcolor' >
@@ -19,6 +23,7 @@ export default function App() {
       <Projects />
       <Contact />
       <Footer/>
+      {/* <WorkBook/> */}
     </div>
   )
 }

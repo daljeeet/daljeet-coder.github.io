@@ -1,4 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+const dark1 = {
+  dark:"#44001A",
+  light:"#770058",
+  font:"white"
+}
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -6,12 +11,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "gradf":"#005C97",
-        "grads":"#363795",
+        "gradf":"#DF7373",
+        "grads":"#576CA8",
         "macLight":"#8AB4D9",
-        "darkbg":"#152D40",
-        "lightbg":"#225D8A",
-        "fontcolor":"#F4FAFf"
+        "darkbg":dark1.dark,
+        "lightbg":dark1.light,
+        "fontcolor":dark1.font,
       },
       animation: {
         loading: 'loading 10s linear infinite',
@@ -31,7 +36,16 @@ module.exports = {
           "100%":{width:"100"}
         }
       },
-    }
+    },
+    screens: {
+      'xsm':'300px',
+      
+      'sm': '480px',
+
+      'md': '780px',
+
+      'lg': '1000px',
+    },
   },
   plugins: [
 		require("tailwindcss-animate"),

@@ -8,7 +8,9 @@ const NeonBtn = ({text}) => {
       <span className='absolute block' ></span>
       <span className='absolute block' ></span>
       <span className='absolute block' ></span>
-     <FiDownload className='mx-2'/> {text}</button>
+      <span className='flex items-center font-semibold'>
+        <FiDownload className='mx-2 text-lg'/> <p>{text}</p></span>
+     </button>
   )
 }
 

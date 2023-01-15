@@ -7,7 +7,7 @@
     animation-timing-function: linear;
 }
 
-.box:hover::before {
+.box:before {
     inset: -20px 0px;
 }
 

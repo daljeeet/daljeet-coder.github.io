@@ -4,7 +4,7 @@ import ContactDtl from "./ContactDtl";
 import SuggForm from "./SuggForm";
 const Contact = () => {
   return (
-    <div id="contact" className="w-full bg-gradient-to-b from-darkbg via-lightbg to-darkbg m-auto my-20 p-0 md:p-8 ">
+    <div id="contact" className="w-full bg-gradient-to-b overflow-hidden from-darkbg via-lightbg to-darkbg m-auto my-20 p-0 md:p-8 ">
       <h2 className="m-auto text-center my-10 text-3xl "> Contact Me </h2>
       <div className="flex flex-col lg:flex-row align-center justify-around ">
         <div className="w-full md:w-5/6 m-auto lg:m-0 lg:pr-8">

@@ -41,7 +41,6 @@ const Home = () => {
           </div>
           <div className="flex justify-center items-center md:w-2/5 w-5/6 z-10 ">
             <MyPhoto/>
-            {/* <img src={welImg} alt="welcome" /> */}
           </div>
         </div>
         <div className="absolute left-0 top-0 right-0 z-0 ">
