@@ -1,0 +1,9 @@
+<svg className='w-full' viewBox="0 0 19 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.39803 2H0.598864C0.548655 2 0.511822 1.9528 0.524022 1.9041C0.804352 0.784936 1.81015 0 2.96389 0H18.501L3.0156 0.938507C2.38761 0.976567 1.82747 1.34633 1.54567 1.90883C1.51768 1.96471 1.46053 2 1.39803 2Z" fill="url(#paint0_linear_1005_3)"/>
+<defs>
+<linearGradient id="paint0_linear_1005_3" x1="32.4999" y1="-2.00047" x2="-36.5001" y2="0.4995">
+<stop stopColor="lightbg"/>
+<stop offset="20" stopColor="darkbg"/>
+</linearGradient>
+</defs>
+</svg>
