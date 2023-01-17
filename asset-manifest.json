@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.76e37750.css",
-    "main.js": "/static/js/main.536745ae.js",
+    "main.css": "/static/css/main.4ff07d4d.css",
+    "main.js": "/static/js/main.cbbec14f.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/movieapp.png": "/static/media/movieapp.7469c9824b55413c55d1.png",
     "static/media/cultfit.gif": "/static/media/cultfit.d2889d03f8d31ffa1aa7.gif",
     "static/media/dpdzines.gif": "/static/media/dpdzines.1b081c25affee5aceda4.gif",
+    "static/media/Daljeet_Singh_Resume.pdf": "/static/media/Daljeet_Singh_Resume.03640da49e8589c86e93.pdf",
     "static/media/mailchimp.png": "/static/media/mailchimp.6f0129a91312dd750003.png",
     "static/media/engage.png": "/static/media/engage.575aa3581085d0fbef05.png",
     "static/media/img.svg": "/static/media/img.9cbf8cafc0ce62c1a00fe2367262d195.svg",
     "index.html": "/index.html",
     "static/media/underline.svg": "/static/media/underline.2cd2b456d64b709dfdab6eb84d36d080.svg",
-    "main.76e37750.css.map": "/static/css/main.76e37750.css.map",
-    "main.536745ae.js.map": "/static/js/main.536745ae.js.map",
+    "main.4ff07d4d.css.map": "/static/css/main.4ff07d4d.css.map",
+    "main.cbbec14f.js.map": "/static/js/main.cbbec14f.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76e37750.css",
-    "static/js/main.536745ae.js"
+    "static/css/main.4ff07d4d.css",
+    "static/js/main.cbbec14f.js"
   ]
 }
