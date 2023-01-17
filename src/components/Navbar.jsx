@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 // import logo from '../images/D.svg'
+import {BiUpArrow} from 'react-icons/bi'
 import NeonBtn from "./NeonBtn";
-import { Link } from "react-scroll";
+import { Link} from "react-scroll";
 const Navbar = () => {
   const [scrl, setScrl] = useState(0);
   const [menu, setMenu] = useState(true);
@@ -16,16 +17,17 @@ const Navbar = () => {
   };
 
   return (
+    <>
     <nav
-      className={`z-50 w-full fixed top-0 md:py-4 shadow-xl ${
+      className={`z-50 w-full fixed top-0 md:py-2 shadow-xl ${
         bg ? "bg-darkbg" : "bg-transparent"
       }`}
     >
-      <div className={`md:w-5/6 m-auto flex items-center md:justify-between flex-col md:flex-row items-center ${menu?"":`${bg?"":"md:bg-transparent bg-darkbg/70"}`} `}>
+      <div className={`md:w-11/12 m-auto flex items-center md:justify-between flex-col md:flex-row items-center ${menu?"":`${bg?"":"md:bg-transparent bg-darkbg/70"}`} `}>
         <div className="flex py-4 md:py-0 items-center flex-no-shrink text-fontcolor mr-6">
           <Link
           onClick={()=>setMenu(true)}
-            activeClass="active"
+            activeClass="text-darkbg"
             className="cursor-pointer font-semibold text-xl tracking-tight"
             to="home"
             spy={true}
@@ -60,8 +62,20 @@ const Navbar = () => {
           <div className="text-base md:items-center md:flex">
             <Link
             onClick={()=>setMenu(true)}
+              to="about"
+              activeClass="text-white"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={600}
+              className="w-28 mx-auto md:mx-0 font-bold text-gray-300 cursor-pointer block mt-4 md:mt-0 hover:text-white"
+            >
+              About
+            </Link>
+            <Link
+            onClick={()=>setMenu(true)}
               to="skills"
-              activeClass="text-red-700"
+              activeClass="text-white"
               spy={true}
               smooth={true}
               offset={-80}
@@ -73,7 +87,7 @@ const Navbar = () => {
             <Link
             onClick={()=>setMenu(true)}
               to="projects"
-              activeClass="text-red-200"
+              activeClass="text-white"
               spy={true}
               smooth={true}
               offset={-80}
@@ -85,7 +99,7 @@ const Navbar = () => {
             <Link
             onClick={()=>setMenu(true)}
               to="contact"
-              activeClass="text-red-200"
+              activeClass="text-white"
               spy={true}
               smooth={true}
               offset={-80}
@@ -95,12 +109,20 @@ const Navbar = () => {
               Contact
             </Link>
           </div>
-          <div className="my-2 mx-auto md:mx-0 md:my-auto">
+          <div className="my-2 items-center flex mx-auto md:mx-0 md:my-auto">
             <NeonBtn text={"Resume"} />
+            <div className={`mx-2 flex ${bg?"":"md:bg-transparent bg-darkbg/70"} py-1 px-3 rounded-xl shadow-inner bg-indigo-900 `}>
+              <div className={`h-4 w-4 cursor-pointer bg-blue-500 rounded-full`}></div>
+              <div className={`h-4 w-4 mx-2 cursor-pointer bg-red-900 rounded-full`}></div>
+              <div className={`h-4 bg-indigo-600 w-4 cursor-pointer rounded-full`}></div></div>
           </div>
         </div>
       </div>
     </nav>
+    {
+      bg&&<Link to='home' smooth={true} className='fixed bottom-10 cursor-pointer right-10 z-10'><BiUpArrow className='text-3xl font-semibold' /> </Link>
+    }
+    </>
   );
 };
 

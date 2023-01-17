@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+.bar {
+    display: none;
+}
+
+.skillBox:hover .bar {
+    display: block;
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}

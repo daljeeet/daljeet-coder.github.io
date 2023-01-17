@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-const dark1 = {
-  dark:"#44001A",
-  light:"#770058",
-  font:"white"
-}
+const thm = {
+  dark:"#022140",
+  light:"#27558B",
+  font:"#F8FFF4",
+  gardient1:"#47A8BD",
+  gardient2:"#9C3848",
+  mac:"#2B6E6F"
+} 
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -11,17 +14,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "gradf":"#DF7373",
-        "grads":"#576CA8",
-        "macLight":"#8AB4D9",
-        "darkbg":dark1.dark,
-        "lightbg":dark1.light,
-        "fontcolor":dark1.font,
+        "gradf":thm.gardient1,
+        "grads":thm.gardient2,
+        "macLight":thm.mac,
+        "darkbg":thm.dark,
+        "lightbg":thm.light,
+        "fontcolor":thm.font,
       },
       animation: {
         loading: 'loading 10s linear infinite',
         wiggle: 'wiggle 0.5s ease-in-out',
-        width: 'width 1s ease-in-out',
+        width: 'width 5s ease-in-out',
       },
       keyframes: {
         loading: {

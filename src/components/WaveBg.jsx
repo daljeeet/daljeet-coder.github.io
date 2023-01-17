@@ -25,31 +25,31 @@ const WaveBg = () => {
                 xlinkHref="#gentle-wave"
                 x={48}
                 y={1}
-                fill="rgba(233,211,231,0.3)"
+                fill="rgba(233,211,231,0.75)"
               />
               <use
                 xlinkHref="#gentle-wave"
                 x={48}
                 y={3}
-                fill="rgba(255,255,255,0.2)"
+                fill="rgba(255,255,255,0.50)"
               />
               <use
                 xlinkHref="#gentle-wave"
                 x={48}
                 y={5}
-                fill="rgba(255,255,255,0.3)"
+                fill="rgba(255,255,255,0.25)"
               />
               <use
                 xlinkHref="#gentle-wave"
                 x={48}
                 y={7}
-                fill="rgba(255,255,255,1)"
+                fill="rgba(100,100,100,0.1)"
               />
             </g>
           </svg>
         </div>
       </div>
-      <div className="bg-gradient-to-t from-darkbg z-1 to-transparent bg-white bottom-0 left-0 right-0 h-20"></div>
+      <div className="bg-gradient-to-t from-darkbg z-1 to-transparent bg-white bottom-0 left-0 right-0 md:h-20"></div>
     </div>
   );
 };

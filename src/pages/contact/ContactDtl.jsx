@@ -50,10 +50,17 @@ const ContactDtl = () => {
         </div>
       </div>
       <div className="w-full my-4 py-4 flex justify-evenly" >
-        <TfiLinkedin className="mx-4 text-3xl cursor-pointer"/>
+        <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/daljeet-singh-61250723a">
+        <TfiLinkedin className="mx-4 text-3xl cursor-pointer"/> </a>
+        <a href="https://github.com/daljeet-coder"target="_blank" rel='noreferrer' >
         <VscGithub className="mx-4 text-3xl cursor-pointer"/>
+        </a>
+        <a href="https://twitter.com/D_s_champ"target="_blank" rel='noreferrer' >
         <TfiTwitterAlt className="mx-4 text-3xl cursor-pointer"/>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=8954379385&text=hey,%20thanks%20for%20your%20message.%20I%20will%20get%20back%20to%20you%20ASAP"target="_blank" rel='noreferrer' >
         <IoLogoWhatsapp className="mx-4 text-3xl cursor-pointer"/>
+        </a>
       </div>
     </div>
   );

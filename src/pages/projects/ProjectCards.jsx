@@ -25,9 +25,7 @@ const ProjectCards = ({ largeScreen, mobile }) => {
           <div>
               <img
                 className="h-full w-full"
-                src={
-                  "https://user-images.githubusercontent.com/80110392/212401024-484b9df6-27b4-4d6c-87d3-93316d7c3183.png"
-                }
+                src={mobile}
                 alt=""
               />
             </div>

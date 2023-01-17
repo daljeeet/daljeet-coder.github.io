@@ -1,23 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Home from './pages/home/Home'
 import './pages/home/Hero.jsx'
-// import TechStack from './pages/tack_stack/TechStack'
+import AOS from 'aos';
 import Skills from './pages/skills/Skills'
 import Projects from './pages/projects/Projects'
 import Contact from './pages/contact/Contact'
 import Footer from './pages/Footer'
 import GitStatus from './pages/GitStatus'
-// import WorkBook from './book_modal/WorkBook'
-export const dark1 = {
-  dark:"#152D40",
-  light:"#225D8A"
-}
+import About from './pages/About'
 export default function App() {
-  return (
-    <div className='bg-darkbg text-fontcolor' >
+  useEffect(() => {
+    AOS.init()
+    document.title="Daljeet Singh"
+  }, [])
+  
+    return (
+    <div className='bg-darkbg relative text-fontcolor' >
       <Navbar/>
+      <div>
+      </div>
       <Home/>
+      <About/>
       <Skills />
       <GitStatus/>
       <Projects />
