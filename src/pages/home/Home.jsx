@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import "../../styling/hero.css";
 import { Link } from "react-scroll";
 import MyPhoto from "../../components/MyPhoto";
+import NeonBtn from "../../components/NeonBtn";
 const Home = () => {
   return (
     <>
@@ -15,9 +16,9 @@ const Home = () => {
               <Hero />
               {/* Neon Effect Button  */}
  
-              <div className="mt-10 m-auto w-auto ">
+              <div className="mt-10 flex m-auto w-5/6 justify-around ">
                 <button
-                  className={`neon ml-10 bg-gray-800/30 rounded-lg relative overflow-hidden py-1 px-2 text-black`}
+                  className={`neon  bg-gradf rounded-lg relative overflow-hidden py-1 px-2 text-black`}
                 >
                   <span className="absolute block"></span>
                   <span className="absolute block"></span>
@@ -25,7 +26,7 @@ const Home = () => {
                   <span className="absolute block"></span>
                   <p className="flex px-2 font-semibold text-lg">
                     <Link
-                    className=""
+                    className="text-white"
                       to="projects"
                       spy={true}
                       smooth={true}
@@ -36,6 +37,9 @@ const Home = () => {
                     </Link>
                   </p>
                 </button>
+                <div className={`neon bg-gradf rounded-lg overflow-hidden py-1 px-2 text-black`}>
+                <NeonBtn text={"Resume"} color={"white"} />
+                </div>
               </div>
             </div>
           </div>

@@ -16,10 +16,8 @@ export default function App() {
   }, [])
   
     return (
-    <div className='bg-darkbg relative text-fontcolor' >
+    <div className="back text-fontcolor bg-cover	bg-fixed" >
       <Navbar/>
-      <div>
-      </div>
       <Home/>
       <About/>
       <Skills />

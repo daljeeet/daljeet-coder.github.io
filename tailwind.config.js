@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 const thm = {
-  dark:"#022140",
-  light:"#27558B",
-  font:"#F8FFF4",
-  gardient1:"#47A8BD",
-  gardient2:"#9C3848",
-  mac:"#2B6E6F"
+  dark:"black",
+  light:"",
+  font:"#38bcf6",
+  gardient1:"#000428",
+  gardient2:"#004e92",
+  mac:"#325781"
 } 
 module.exports = {
   content: [

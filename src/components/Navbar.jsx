@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="flex py-4 md:py-0 items-center flex-no-shrink text-fontcolor mr-6">
           <Link
           onClick={()=>setMenu(true)}
-            activeClass="text-darkbg"
+            activeClass="text-white"
             className="cursor-pointer font-semibold text-xl tracking-tight"
             to="home"
             spy={true}
@@ -66,9 +66,9 @@ const Navbar = () => {
               activeClass="text-white"
               spy={true}
               smooth={true}
-              offset={-80}
+              offset={-50}
               duration={600}
-              className="w-28 mx-auto md:mx-0 font-bold text-gray-300 cursor-pointer block mt-4 md:mt-0 hover:text-white"
+              className="w-28 mx-auto md:mx-0 font-bold cursor-pointer block mt-4 md:mt-0 hover:text-white"
             >
               About
             </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
               smooth={true}
               offset={-80}
               duration={600}
-              className="w-28 mx-auto md:mx-0 font-bold text-gray-300 cursor-pointer block mt-4 md:mt-0 hover:text-white"
+              className="w-28 mx-auto md:mx-0 font-bold cursor-pointer block mt-4 md:mt-0 hover:text-white"
             >
               Skills
             </Link>
@@ -92,7 +92,7 @@ const Navbar = () => {
               smooth={true}
               offset={-80}
               duration={600}
-              className="w-28 mx-auto md:mx-0 font-bold text-gray-300 cursor-pointer block mt-4 md:inline-block md:mt-0 text-teal-lighter hover:text-white"
+              className="w-28 mx-auto md:mx-0 font-bold cursor-pointer block mt-4 md:inline-block md:mt-0 text-teal-lighter hover:text-white"
             >
               Projects
             </Link>
@@ -104,17 +104,17 @@ const Navbar = () => {
               smooth={true}
               offset={-80}
               duration={600}
-              className="w-28 font-bold mx-auto md:mx-0 text-gray-300 cursor-pointer block mt-4 md:inline-block md:mt-0 text-teal-lighter hover:text-white"
+              className="w-28 font-bold mx-auto md:mx-0 cursor-pointer block mt-4 md:inline-block md:mt-0 text-teal-lighter hover:text-white"
             >
               Contact
             </Link>
           </div>
           <div className="my-2 items-center flex mx-auto md:mx-0 md:my-auto">
             <NeonBtn text={"Resume"} />
-            <div className={`mx-2 flex ${bg?"":"md:bg-transparent bg-darkbg/70"} py-1 px-3 rounded-xl shadow-inner bg-indigo-900 `}>
+            {/* <div className={`mx-2 flex ${bg?"":"md:bg-transparent bg-darkbg/70"} py-1 px-3 rounded-xl shadow-inner bg-indigo-900 `}>
               <div className={`h-4 w-4 cursor-pointer bg-blue-500 rounded-full`}></div>
               <div className={`h-4 w-4 mx-2 cursor-pointer bg-red-900 rounded-full`}></div>
-              <div className={`h-4 bg-indigo-600 w-4 cursor-pointer rounded-full`}></div></div>
+              <div className={`h-4 bg-indigo-600 w-4 cursor-pointer rounded-full`}></div></div> */}
           </div>
         </div>
       </div>
