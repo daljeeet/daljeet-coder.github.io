@@ -4,7 +4,9 @@ import { AiFillApple } from "react-icons/ai";
 const ProjectCards = ({ largeScreen, mobile }) => {
   return (
     <>
-      <div className="relative w-full md:min-w-[34rem] md:w-1/2 pb-10 my-10">
+      <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out" className="relative w-full md:min-w-[34rem] md:w-1/2 pb-10 my-10">
         <div className="outer hidden md:block relative w-[39rem] h-96">
           <div className="outer  h-80 w-[32rem] p-5 pb-9 overflow-hidden shadow-[20px_25px_20px] shadow-darkbg  rounded-xl bg-macLight">
             <div className="frame before:absolute before:p-6">
@@ -41,9 +43,7 @@ const ProjectCards = ({ largeScreen, mobile }) => {
               <div className="absolute top-[1.6rem] left-[30%] w-[40%] h-5 bg-black rounded-full m-auto"></div>
               <img
                 className="h-full w-full"
-                src={
-                  "https://user-images.githubusercontent.com/80110392/212401024-484b9df6-27b4-4d6c-87d3-93316d7c3183.png"
-                }
+                src={mobile}
                 alt=""
               />
           </div>

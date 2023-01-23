@@ -1,20 +1,11 @@
 import React from 'react'
-import './wrkBook.css'
-const WorkBook = () => {
+import "./Book.scss"
+
+const Book = () => {
   return (
-    <div>
-        <div className="imgLoader"></div>
+    <>
 
 <div className="container">
-
-  <h1 className="title">
-    Turning pages<br/>with css
-  </h1>
-
-  <div className="credit">
-    * Images loaded randomly from Picsum.photos
-  </div>
-
   <div className="book">
     <div className="gap"></div>
     <div className="pages">
@@ -42,14 +33,8 @@ const WorkBook = () => {
     </div>
   </div>
 </div>
-
-<a href="https://twitter.com/amit_sheen" className="twitterLink" target="_top">
-   <img src="https://assets.codepen.io/1948355/twitterLogo2.png" alt='' />
-</a>
-
-
-    </div>
+    </>
   )
 }
 
-export default WorkBook
+export default Book

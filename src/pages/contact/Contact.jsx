@@ -11,10 +11,14 @@ const Contact = () => {
         <div className=''> <img src={underline} alt="" className='' /> </div>
         </div>
       <div className="flex flex-col lg:flex-row align-center justify-around ">
-        <div className="w-full md:w-5/6 m-auto lg:m-0 lg:pr-8">
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out" className="w-full md:w-5/6 m-auto lg:m-0 lg:pr-8">
         <ContactDtl/>
         </div>
-        <div className="w-full md:w-5/6 m-auto shadow-[20px_25px_20px] shadow-darkbg lg:m-0 mt-10 lg:mt-auto " >
+        <div data-aos="fade-left" data-aos-offset="200" data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out" className="w-full md:w-5/6 m-auto lg:m-0 mt-10 lg:mt-auto " >
           <SuggForm/>
         </div>
       </div>

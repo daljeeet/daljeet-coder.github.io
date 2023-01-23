@@ -12,7 +12,7 @@ import {IoLogoWhatsapp} from 'react-icons/io'
 
 const ContactDtl = () => {
   return (
-    <div className="flex bg-black/20 flex-col w-full border-2 shadow-xl items-center border-darkbg p-2 rounded-xl ">
+    <div className="flex shadow-[-20px_25px_20px] shadow-darkbg  bg-black/20 flex-col w-full border-2 shadow-xl items-center border-darkbg p-2 rounded-xl ">
       <h3 className="w-fit my-8 border-b-2 border-darkbg text-xl p-2 text-center">
         Have an Idea, or a Project to Discuss? <br />
         Reach Out to me.

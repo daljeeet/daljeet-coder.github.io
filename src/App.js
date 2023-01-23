@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Home from './pages/home/Home'
-import './pages/home/Hero.jsx'
 import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Skills from './pages/skills/Skills'
 import Projects from './pages/projects/Projects'
 import Contact from './pages/contact/Contact'
