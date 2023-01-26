@@ -1,6 +1,7 @@
 import React from "react";
 import underline from "../images/underline.svg";
 import img from "../images/img.svg";
+import NeonBtn from "../components/NeonBtn";
 const About = () => {
   return (
     <div
@@ -23,29 +24,29 @@ const About = () => {
           <img src={underline} alt="" className="" />{" "}
         </div>
       </div>
-      <div className="relative ">
-        <div className="w-80 h-80 absolute top-[-5rem] z-0 md:left-[-5rem] rounded-full bg-gradient-to-r from-grads/30 to-gradf/30 blur-3xl"></div>
-        <div className="w-80 h-80 absolute bottom-[-5rem] z-0 md:right-[-5rem] right-0 rounded-full bg-gradient-to-r from-gradf/20 to-grads/30 blur-3xl"></div>
+      <div className="relative">
+        <div className="w-80  h-80 absolute top-[-5rem] z-0 md:left-[-5rem] rounded-full bg-gradient-to-r from-grads/30 to-gradf/30 blur-3xl"></div>
+        <div className="w-80  h-80 absolute bottom-[-5rem] z-0 md:right-[-5rem] right-0 rounded-full bg-gradient-to-r  from-gradf/20 to-grads/30 blur-3xl"></div>
         <div className="bg-lightbg flex md:flex-row flex-col justify-around items-center relative md:p-20 p-3 z-1 rounded-2xl">
           <div
-            data-aos="fade-right"
+            data-aos="zoom-in-down"
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            className="md:w-1/2 w-full p-4 md:mb-auto mb-6 "
+            className="md:w-1/2 w-full mr-4 bg-gradf/40 p-4 md:mb-auto mb-6 "
           >
             <img
               src={img}
-              className="w-5/6 m-auto border-b-4 rounded-xl border-gradf"
+              className="w-5/6 m-auto border-b-4 py-3 rounded-xl border-gradf"
               alt=""
             />
           </div>
           <div
-            data-aos="fade-left"
+            data-aos="zoom-in-up"
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            className="md:w-1/2  w-full bg-gradf/40 p-3 rounded-xl "
+            className="md:w-1/2 w-full bg-gradf/40 p-3 rounded-xl "
           >
             <p className="md:w-5/6 md:py-10 m-auto font-semibold leading-normal">
               A passionate, aspiring Fullstack web developer, specializing in
@@ -54,6 +55,15 @@ const About = () => {
               foundation in the latest web development technologies such as
               MongoDB, Express.js, React.js, and Node.js
             </p>
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="50"
+              data-aos-duration="3000"
+              data-aos-easing="ease-in-out"
+              className={`neon bg-gradf rounded-lg w-fit m-auto overflow-hidden py-1 px-2 text-black`}
+            >
+              <NeonBtn text={"Resume"} color={"white"} />
+            </div>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import resume from '../images/Daljeet_Singh_Resume.pdf'
 import {FiDownload} from "react-icons/fi"
 const NeonBtn = ({text, color='fontcolor'}) => {
   return (
-    <button onClick={()=>window.open(resume)} type='submit' download={true} className={`neon rounded-lg relative overflow-hidden flex py-1 px-2 font-md text-${color} `} >
+    <button onClick={()=>window.open(resume)} download='Daljeet_Singh_Resume' className={`neon 2 rounded-lg relative overflow-hidden flex py-1 px-2 font-md text-${color} `} >
         <span className='absolute block' ></span>
       <span className='absolute block' ></span>
       <span className='absolute block' ></span>

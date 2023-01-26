@@ -27,7 +27,7 @@ const Skills = () => {
             Language & Tools :
           </h3>
           <div
-            data-aos="fade-right"
+            data-aos="zoom-in-up"
             data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="1000"
@@ -117,10 +117,10 @@ const Skills = () => {
             </div>
           </div>
           <h3 className="my-8 border-b-2 w-fit ml-20 px-2 rounded-md">
-            Other Skills :
+            Other Tools :
           </h3>
           <div
-            data-aos="fade-left"
+            data-aos="zoom-in-up"
             data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="1000"
