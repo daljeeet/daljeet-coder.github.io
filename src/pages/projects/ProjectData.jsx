@@ -10,20 +10,22 @@ import hot_dsk from "../../images/hot_dsk.gif";
 import hot_mob from "../../images/hot_mob.gif";
 import mail_dsk from "../../images/mail_dsk.gif";
 import mail_mob from "../../images/mail_mob.gif";
-  export const data = [{
+  export const data = [
+    {
       name: "Virtual-Shop",
       dskImg: vs_dsk,
       mobImg: vs_mob,
       website: "https://minishop-nine.vercel.app/",
       github: "https://github.com/Sachin1yadav/verdant-plastic-2769",
       features: [
-        "virtual-shop-an E-commerce-website, where a user can purchase various items",
-        "group Project",
+        "virtual-shop-an E-commerce-website, where a user can shop for various Products",
+        "a group Project of 5 developers",
         "Completed in 5 days",
         "Used React for development",
         "Used Chakra UI, Scss, Css for Designing",
-        "My contribution was in making backend and admin pannel"
+        "Contributed in managing Backend and Admin pannel"
       ],
+      tackstack:["CSS3","SCSS","ReactJS","ChakraUI","Redux","Firebase"]
     },
     {
       name: "Cult Fit - Clone",
@@ -38,6 +40,7 @@ import mail_mob from "../../images/mail_mob.gif";
         "Used React for development",
         "Used Chakra UI for Designing",
       ],
+      tackstack:["ReactJS","JSON","ChakraUI","glitch"]
     },
     {
       name: "DP-dzines.com",
@@ -52,6 +55,7 @@ import mail_mob from "../../images/mail_mob.gif";
         "Used React for development",
         "Used CSS and Other Libraryes for Designing",
       ],
+      tackstack:["ReactJS","CSS3","npm"]
     },
     {
       name: "HotStar - Clone",
@@ -66,6 +70,7 @@ import mail_mob from "../../images/mail_mob.gif";
         "Used HTML CSS and Javascript for the Development",
         "Used json rest api for Data",
       ],
+      tackstack:["HTML5","CSS3","JavaScript"]
     },
     {
       name: "Engagebay - Clone",
@@ -80,6 +85,7 @@ import mail_mob from "../../images/mail_mob.gif";
         "Used HTML, CSS and JavaScript",
         "Used Movie API and debouncing",
       ],
+      tackstack:["HTML5","CSS3","JavaScript"]
     },
     {
       name: "MailChimp - Clone",
@@ -93,5 +99,6 @@ import mail_mob from "../../images/mail_mob.gif";
 "Completed in 5 days",
 "Used HTML, CSS, ans JavaScript",
       ],
+      tackstack:["HTML5","CSS3","JavaScript"]
     },
   ];

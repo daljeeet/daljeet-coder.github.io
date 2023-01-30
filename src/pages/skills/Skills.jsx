@@ -1,6 +1,75 @@
 import React from "react";
 import underline from "../../images/underline.svg";
+import SkillsCard from "./SkillsCard";
 const Skills = () => {
+  const skillData = [
+    {img:"https://user-images.githubusercontent.com/80110392/210499593-ca8b2ba2-c9c1-40d9-b358-a99e3ab2b4bc.svg",
+    animate:"fade-up",
+    content:"Build Over 50 various Porjects",
+    name:'HTML5'},
+    {img:"https://user-images.githubusercontent.com/80110392/210498458-d17c5a52-f76d-4f2e-b00e-fe52dca02313.svg",
+    animate:"fade-down",
+    content:"Used in all Porjects",
+    name:'CSS3'},
+    {img:"https://user-images.githubusercontent.com/80110392/210498475-7c5470b5-9ac0-49fc-a086-100f5abf8733.svg",
+    animate:"fade-up",
+    content:"over 1500+ hours Practice in",
+    name:'javaScript'},
+    {img:"https://user-images.githubusercontent.com/80110392/210501305-35907fe5-ffb0-4feb-ab44-cff59dabc865.svg",
+    animate:"fade-down",
+    content:"Used for State Manegement",
+    name:'Redux'},
+    {img:"https://user-images.githubusercontent.com/80110392/210502706-9c859b39-3d3b-4a09-8676-f466af060b6c.svg",
+    animate:"fade-up",
+    content:"Used for Data-Base in Backend Projects",
+    name:'MongoDB'},
+    {img:"https://user-images.githubusercontent.com/80110392/212751832-e5077340-d488-4a5c-bcd0-6e0e2dde1c4c.svg",
+    animate:"fade-down",
+    content:"Used for Building Backend Projects",
+    name:'Express JS'},
+    {img:"https://user-images.githubusercontent.com/80110392/210498509-583509e4-6fba-44c5-9c62-2550b3c03a1e.svg",
+    animate:"fade-up",
+    content:"Used React for building Most of my Projects",
+    name:'React JS'},
+    {img:"https://user-images.githubusercontent.com/80110392/210502766-3387da2b-a991-4858-b206-d65a83732f12.svg",
+    animate:"fade-down",
+    content:"Used in My Backend Projects",
+    name:'Node JS'},
+  ]
+  const toolsData = [
+    {img:"https://user-images.githubusercontent.com/80110392/210502839-ba898ed3-d33a-4b01-a554-15e3d25c9b9d.svg",
+    animate:"fade-up",
+    content:"Used in most of my Projects",
+    name:'tailwind CSS'},
+    {img:"https://user-images.githubusercontent.com/80110392/210503032-817da1a7-f7c8-4d59-b6c0-6a7e5270ca38.svg",
+    animate:"fade-down",
+    content:"Build Some of my Projects using typescript",
+    name:'typeScript'},
+    {img:"https://user-images.githubusercontent.com/80110392/210502569-a5c19368-14c3-473b-829c-fbb050b42f4e.svg",
+    animate:"fade-up",
+    content:"Used Figma For Designing UI of Projects",
+    name:'Figma'},
+    {img:"https://user-images.githubusercontent.com/80110392/215558264-4d43f9d9-ba83-484e-8db2-c39e7153aca8.svg",
+    animate:"fade-down",
+    content:"Used in Building Some of my Projects",
+    name:'Next JS'},
+    {img:"https://user-images.githubusercontent.com/80110392/215560746-56d7806f-0fc6-4b5a-b146-1da4634d483a.png",
+    animate:"fade-up",
+    content:"Used Cypress Testing Library To test Code",
+    name:'Cypress'},
+    {img:"https://user-images.githubusercontent.com/80110392/212755675-e84111db-edb8-4822-867d-510f2e200836.svg",
+    animate:"fade-down",
+    content:"Confident in VS-Code for Writing Code",
+    name:'VS Code'},
+    {img:"https://user-images.githubusercontent.com/80110392/212755766-c018bee3-35ca-448c-82de-66903a42e042.svg",
+    animate:"fade-up",
+    content:"Used npm for managing packeges",
+    name:'NPM'},
+    {img:"https://user-images.githubusercontent.com/80110392/215564304-cccfe7c4-e2b5-479e-addb-4d887f34f27b.png",
+    animate:"fade-down",
+    content:"Used Chakra Comopnents in Various Projects",
+    name:'Chakra UI'},
+  ]
   return (
     <div
       id="skills"
@@ -27,188 +96,18 @@ const Skills = () => {
             Language & Tools :
           </h3>
           <div
-            data-aos="zoom-in-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
             className="grid md:grid-cols-3 lg:grid-cols-4 grid-cols-2 gap-y-8 gap-x-5"
-          >
-            <div className="skillBox m-auto rounded-lg hover:animate-bounce duration-1000 cursor-none lg:w-52 w-32 h-20 lg:h-32 bg-gradf/40 py-2 relative ">
-              <img
-                src="https://user-images.githubusercontent.com/80110392/210499593-ca8b2ba2-c9c1-40d9-b358-a99e3ab2b4bc.svg"
-                className="w-1/3 m-auto"
-                alt=""
-              />
-              <div className="bar w-5/6 bg-darkbg rounded-full border-2 border-darkbg h-2 left-[10%] absolute bottom-1 md:bottom-3 overflow-hidden">
-                <div className="bg-fontcolor h-1 rounded-full w-5/6 animate-width "></div>
-              </div>
-            </div>
-            <div className="skillBox m-auto rounded-lg hover:animate-bounce duration-1000 cursor-none lg:w-52 w-32 h-20 lg:h-32 bg-gradf/40 py-2 relative ">
-              <img
-                src="https://user-images.githubusercontent.com/80110392/210498458-d17c5a52-f76d-4f2e-b00e-fe52dca02313.svg"
-                className="w-1/3 m-auto"
-                alt=""
-              />
-              <div className="bar w-5/6 bg-darkbg rounded-full border-2 border-darkbg h-2 left-[10%] absolute bottom-1 md:bottom-3">
-                <div className="bg-fontcolor h-1 rounded-full w-5/6 animate-width "></div>
-              </div>
-            </div>
-            <div className="skillBox m-auto rounded-lg hover:animate-bounce duration-1000 cursor-none lg:w-52 w-32 h-20 lg:h-32 bg-gradf/40 py-2 relative ">
-              <img
-                src="https://user-images.githubusercontent.com/80110392/210498475-7c5470b5-9ac0-49fc-a086-100f5abf8733.svg"
-                className="w-1/3 m-auto"
-                alt=""
-              />
-              <div className="bar w-5/6 bg-darkbg rounded-full border-2 border-darkbg h-2 left-[10%] absolute bottom-1 md:bottom-3">
-                <div className="bg-fontcolor h-1 rounded-full w-3/4 animate-width "></div>
-              </div>
-            </div>
-            <div className="skillBox m-auto rounded-lg hover:animate-bounce duration-1000 cursor-none lg:w-52 w-32 h-20 lg:h-32 bg-gradf/40 py-2 relative ">
-              <img
-                src="https://user-images.githubusercontent.com/80110392/210501305-35907fe5-ffb0-4feb-ab44-cff59dabc865.svg"
-                className="w-1/3 m-auto"
-                alt=""
-              />
-              <div className="bar w-5/6 bg-darkbg rounded-full border-2 border-darkbg h-2 left-[10%] absolute bottom-1 md:bottom-3">
-                <div className="bg-fontcolor h-1 rounded-full w-3/4 animate-width "></div>
-              </div>
-            </div>
-            <div className="skillBox m-auto rounded-lg hover:animate-bounce duration-1000 cursor-none lg:w-52 w-32 h-20 lg:h-32 bg-gradf/40 py-2 relative ">
-              <img
-                src="https://user-images.githubusercontent.com/80110392/210502706-9c859b39-3d3b-4a09-8676-f466af060b6c.svg"
-                className="w-1/3 h-3/4 m-auto"
-                alt=""
-              />
-              <div className="bar w-5/6 bg-darkbg rounded-full border-2 border-darkbg h-2 left-[10%] absolute bottom-1 md:bottom-3">
-                <div className="bg-fontcolor h-1 rounded-full w-1/4 animate-width "></div>
-              </div>
-            </div>
-            <div className="skillBox m-auto rounded-lg hover:animate-bounce duration-1000 cursor-none lg:w-52 w-32 h-20 lg:h-32 bg-gradf/40 py-2 relative ">
-              <img
-                src="https://user-images.githubusercontent.com/80110392/212751832-e5077340-d488-4a5c-bcd0-6e0e2dde1c4c.svg"
-                className="w-1/3 m-auto"
-                alt=""
-              />
-              <div className="bar w-5/6 bg-darkbg rounded-full border-2 border-darkbg h-2 left-[10%] absolute bottom-1 md:bottom-3">
-                <div className="bg-fontcolor h-1 rounded-full w-1/4 animate-width "></div>
-              </div>
-            </div>
-
-            <div className="skillBox m-auto rounded-lg hover:animate-bounce duration-1000 cursor-none lg:w-52 w-32 h-20 lg:h-32 bg-gradf/40 py-2 relative ">
-              <img
-                src="https://user-images.githubusercontent.com/80110392/210498509-583509e4-6fba-44c5-9c62-2550b3c03a1e.svg"
-                className="w-1/3 m-auto"
-                alt=""
-              />
-              <div className="bar w-5/6 bg-darkbg rounded-full border-2 border-darkbg h-2 left-[10%] absolute bottom-1 md:bottom-3">
-                <div className="bg-fontcolor h-1 rounded-full w-3/4 animate-width "></div>
-              </div>
-            </div>
-            <div className="skillBox m-auto rounded-lg hover:animate-bounce duration-1000 cursor-none lg:w-52 w-32 h-20 lg:h-32 bg-gradf/40 py-2 relative ">
-              <img
-                src="https://user-images.githubusercontent.com/80110392/210502766-3387da2b-a991-4858-b206-d65a83732f12.svg"
-                className="w-1/3 m-auto"
-                alt=""
-              />
-              <div className="bar w-5/6 bg-darkbg rounded-full border-2 border-darkbg h-2 left-[10%] absolute bottom-1 md:bottom-3">
-                <div className="bg-fontcolor h-1 rounded-full w-1/4 animate-width "></div>
-              </div>
-            </div>
+            >
+              {skillData.map((el,id)=><SkillsCard key={id} data={el} />)}
           </div>
           <h3 className="my-8 border-b-2 w-fit ml-20 px-2 rounded-md">
             Other Tools :
           </h3>
           <div
-            data-aos="zoom-in-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
             className="grid md:grid-cols-3 lg:grid-cols-4 grid-cols-2 gap-y-8 gap-x-5"
-          >
-            <div className="skillBox m-auto m-auto rounded-lg hover:animate-bounce duration-1000 cursor-none lg:w-52 w-32 h-20 lg:h-32 bg-gradf/40 py-2 relative ">
-              <img
-                src="https://user-images.githubusercontent.com/80110392/210502839-ba898ed3-d33a-4b01-a554-15e3d25c9b9d.svg"
-                className="w-1/2 m-auto"
-                alt=""
-              />
-              <div className="bar w-5/6 bg-darkbg rounded-full border-2 border-darkbg h-2 left-[10%] absolute bottom-1 md:bottom-3 overflow-hidden">
-                <div className="bg-fontcolor h-1 rounded-full w-5/6 animate-width "></div>
-              </div>
-            </div>
-            <div className="skillBox m-auto rounded-lg hover:animate-bounce duration-1000 cursor-none lg:w-52 w-32 h-20 lg:h-32 bg-gradf/40 py-2 relative ">
-              <img
-                src="https://user-images.githubusercontent.com/80110392/210503032-817da1a7-f7c8-4d59-b6c0-6a7e5270ca38.svg"
-                className="w-1/3 m-auto"
-                alt=""
-              />
-              <div className="bar w-5/6 bg-darkbg rounded-full border-2 border-darkbg h-2 left-[10%] absolute bottom-1 md:bottom-3">
-                <div className="bg-fontcolor h-1 rounded-full w-1/2 animate-width "></div>
-              </div>
-            </div>
-            <div className="skillBox m-auto rounded-lg hover:animate-bounce duration-1000 cursor-none lg:w-52 w-32 h-20 lg:h-32 bg-gradf/40 py-2 relative ">
-              <img
-                src="https://user-images.githubusercontent.com/80110392/210502569-a5c19368-14c3-473b-829c-fbb050b42f4e.svg"
-                className="w-1/4 m-auto"
-                alt=""
-              />
-              <div className="bar w-5/6 bg-darkbg rounded-full border-2 border-darkbg h-2 left-[10%] absolute bottom-1 md:bottom-3">
-                <div className="bg-fontcolor h-1 rounded-full w-3/4 animate-width "></div>
-              </div>
-            </div>
-            <div className="skillBox m-auto rounded-lg hover:animate-bounce duration-1000 cursor-none lg:w-52 w-32 h-20 lg:h-32 bg-gradf/40 py-2 relative ">
-              <img
-                src="https://user-images.githubusercontent.com/80110392/210502627-042662ed-f5cb-4ede-b978-cfa98ef641b5.svg"
-                className="w-1/3 m-auto"
-                alt=""
-              />
-              <div className="bar w-5/6 bg-darkbg rounded-full border-2 border-darkbg h-2 left-[10%] absolute bottom-1 md:bottom-3">
-                <div className="bg-fontcolor h-1 rounded-full w-3/4 animate-width "></div>
-              </div>
-            </div>
-            <div className="skillBox m-auto rounded-lg hover:animate-bounce duration-1000 cursor-none lg:w-52 w-32 h-20 lg:h-32 bg-gradf/40 py-2 relative ">
-              <img
-                src="https://user-images.githubusercontent.com/80110392/211145634-b6732f40-2e9f-48bc-bbab-e2d344a30041.svg"
-                className="w-1/2 m-auto mt-4"
-                alt=""
-              />
-              <div className="bar w-5/6 bg-darkbg rounded-full border-2 border-darkbg h-2 left-[10%] absolute bottom-1 md:bottom-3">
-                <div className="bg-fontcolor h-1 rounded-full w-1/4 animate-width "></div>
-              </div>
-            </div>
-            <div className="skillBox m-auto rounded-lg hover:animate-bounce duration-1000 cursor-none lg:w-52 w-32 h-20 lg:h-32 bg-gradf/40 py-2 relative ">
-              <img
-                src="https://avatars.githubusercontent.com/u/8908513?s=200&v=4"
-                className="w-1/3 m-auto"
-                alt=""
-              />
-              <div className="bar w-5/6 bg-darkbg rounded-full border-2 border-darkbg h-2 left-[10%] absolute bottom-1 md:bottom-3">
-                <div className="bg-fontcolor h-1 rounded-full w-1/4 animate-width "></div>
-              </div>
-            </div>
-
-            <div className="skillBox m-auto  rounded-lg hover:animate-bounce duration-1000 cursor-none lg:w-52 w-32 h-20 lg:h-32 bg-gradf/40 py-2 relative ">
-              <img
-                src="https://user-images.githubusercontent.com/80110392/212755675-e84111db-edb8-4822-867d-510f2e200836.svg"
-                className="w-1/3 m-auto"
-                alt=""
-              />
-              <div className="bar w-5/6 bg-darkbg rounded-full border-2 border-darkbg h-2 left-[10%] absolute bottom-1 md:bottom-3">
-                <div className="bg-fontcolor h-1 rounded-full w-3/4 animate-width "></div>
-              </div>
-            </div>
-            <div className="skillBox m-auto rounded-lg hover:animate-bounce duration-1000 cursor-none lg:w-52 w-32 h-20 lg:h-32 bg-gradf/40 py-2 relative ">
-              <img
-                src="https://user-images.githubusercontent.com/80110392/212755766-c018bee3-35ca-448c-82de-66903a42e042.svg"
-                className="w-1/2 m-auto mt-3"
-                alt=""
-              />
-              <div className="bar w-5/6 bg-darkbg rounded-full border-2 border-darkbg h-2 left-[10%] absolute bottom-1 md:bottom-3">
-                <div className="bg-fontcolor h-1 rounded-full w-1/4 animate-width "></div>
-              </div>
-            </div>
-          </div>
+            >
+              {toolsData.map((el,id)=><SkillsCard key={id} data={el} />)}
+          </div> 
         </div>
       </div>
     </div>

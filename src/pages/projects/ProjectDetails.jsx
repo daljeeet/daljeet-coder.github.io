@@ -16,15 +16,21 @@ const ProjectDetails = () => {
               data-aos-delay="50"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              className="md:min-w-[26rem]  md:w-1/3 rounded-xl bg-gradf/40 lg:mb-20 p-4 sm:p-10 shadow-[20px_25px_40px] shadow-darkbg"
+              className="md:min-w-[26rem]  md:w-1/3 rounded-xl bg-gradf/40 lg:mb-20 p-2 sm:p-10 shadow-[20px_25px_40px] shadow-darkbg"
             >
               <h3 className="text-2xl m-auto text-center border-darkbg border-b-4 pb-2 mb-6 w-5/6 ">
                 {el.name}
               </h3>
+              <h3 className='font-semibold' > Features :</h3>
               <ul className="list-disc pl-3 sm:text-sm">
-                
-                {el.features.map((el,id)=><li key={id}>{el}</li>)}
+                {el.features.map((e,id)=><li key={id} >{e}</li>)}
               </ul>
+              <h3 className='font-semibold mt-4'>Teach-Stack : </h3>
+              <div className='mt-2 flex flex-wrap font-semibold gap-4'>
+                {el.tackstack.map((e,id)=><div key={id} className='mx-2 px-2  border-[1px] border-black bg-darkbg w-fit' >{e} </div>)
+                  
+                }
+              </div>
               <div className="flex justify-between w-5/6 mt-8 m-auto flex-wrap">
                 <a
                   href={el.github}
