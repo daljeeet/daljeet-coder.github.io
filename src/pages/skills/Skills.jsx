@@ -96,13 +96,13 @@ const Skills = () => {
             Language & Tools :
           </h3>
           <div
-            className="grid md:grid-cols-3 lg:grid-cols-4 grid-cols-2 gap-y-8 gap-x-5"
+            className="grid md:grid-cols-3 lg:grid-cols-4 grid-cols-2 sm:grid-cols-3 gap-y-8 gap-x-5"
             >
               {skillData.map((el,id)=><SkillsCard key={id} data={el} />)}
           </div>
           <h3 className="my-8 border-b-2 w-fit ml-20 px-2 rounded-md">
             Other Tools :
-          </h3>
+          </h3> 
           <div
             className="grid md:grid-cols-3 lg:grid-cols-4 grid-cols-2 gap-y-8 gap-x-5"
             >

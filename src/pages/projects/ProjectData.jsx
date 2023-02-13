@@ -58,7 +58,7 @@ import mail_mob from "../../images/mail_mob.gif";
       tackstack:["ReactJS","CSS3","npm"]
     },
     {
-      name: "HotStar - Clone",
+      name: "Engagebay - Clone",
       dskImg: eng_dsk,
       mobImg: eng_mob,
       website: "https://gleeful-praline-8d6d79.netlify.app/",
@@ -73,7 +73,7 @@ import mail_mob from "../../images/mail_mob.gif";
       tackstack:["HTML5","CSS3","JavaScript"]
     },
     {
-      name: "Engagebay - Clone",
+      name: "HotStar - Clone",
       dskImg: hot_dsk,
       mobImg: hot_mob,
       website: "https://ornate-kleicha-56c2f7.netlify.app/",
