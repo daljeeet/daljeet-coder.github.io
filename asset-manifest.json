@@ -1,12 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.40fda3e7.css",
-    "main.js": "/static/js/main.5c80ad70.js",
+    "main.js": "/static/js/main.f3e86c02.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/hot_dsk.gif": "/static/media/hot_dsk.3b7e7c38af8cc175577e.gif",
+    "static/media/insta_mob.gif": "/static/media/insta_mob.cb591cec37836e6e4edb.gif",
     "static/media/dp_dsk.gif": "/static/media/dp_dsk.2c3d4914dee00a364585.gif",
     "static/media/dp_mob.gif": "/static/media/dp_mob.dd6de587d404ecf14967.gif",
     "static/media/clt_dsk.gif": "/static/media/clt_dsk.adbb2be3332e98a85bf6.gif",
+    "static/media/insta_dsk.gif": "/static/media/insta_dsk.c47a36538d4548b85ed2.gif",
     "static/media/vs_dsk.gif": "/static/media/vs_dsk.a5238fca3103ac6f068b.gif",
     "static/media/vs_mob.gif": "/static/media/vs_mob.3ef0f546dea78acd1006.gif",
     "static/media/hot_mob.gif": "/static/media/hot_mob.ef992e382eed08b3336c.gif",
@@ -20,11 +22,11 @@
     "index.html": "/index.html",
     "static/media/underline.svg": "/static/media/underline.2cd2b456d64b709dfdab6eb84d36d080.svg",
     "main.40fda3e7.css.map": "/static/css/main.40fda3e7.css.map",
-    "main.5c80ad70.js.map": "/static/js/main.5c80ad70.js.map",
+    "main.f3e86c02.js.map": "/static/js/main.f3e86c02.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.40fda3e7.css",
-    "static/js/main.5c80ad70.js"
+    "static/js/main.f3e86c02.js"
   ]
 }
