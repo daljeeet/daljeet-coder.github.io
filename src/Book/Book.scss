@@ -1,36 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 $bookAngle: 60deg;
-$speed: 2s;
+$speed: 3s;
 $borderColor: #555;
 $images: url('https://user-images.githubusercontent.com/80110392/215575531-cd6986e6-5a9d-4113-8e6a-e1a5f1bcea77.png'),
-url('https://user-images.githubusercontent.com/80110392/215576885-fb1abe4d-81a0-4508-b722-debbbe4d6b77.png'),
-url('https://user-images.githubusercontent.com/80110392/215577378-2fd16d08-d8a7-41a8-bc1c-c8381c83d745.png'),
-url('https://user-images.githubusercontent.com/80110392/215577776-53ad6e5a-cfb3-43ad-b7aa-46747650a487.png'),
-url('https://user-images.githubusercontent.com/80110392/218502331-3f56f2bb-2431-4aa6-be15-34489a9a2841.png'),
-url('https://user-images.githubusercontent.com/80110392/215578040-f7d0c9b1-7710-487f-9ead-f868cecf9071.png');
-// Preload to images
-.imgLoader {
-    position: fixed;
-    animation: preLoad 1s steps(1);
-    width: 1px;
-    height: 1px;
-    @keyframes preLoad {
-        @for $i from 0 through 4 {
-            #{$i * 10}% {
-                background-image: nth($images, ($i + 1));
-            }
-        }
-        100% {
-            display: none;
-        }
-    }
+url('https://user-images.githubusercontent.com/80110392/221778545-da22eb7d-5151-49c2-9c4e-3804326bc60c.png'),
+url('https://user-images.githubusercontent.com/80110392/221778932-22e5d37c-af2b-4d27-859a-8b216e1389a9.png'),
+url('https://user-images.githubusercontent.com/80110392/221779235-79dca883-1fde-4b8e-8cf5-4b4ba4a33f68.png'),
+url('https://user-images.githubusercontent.com/80110392/221781531-02e33051-9cfa-4e82-b1e5-50c2fb77c370.png'),
+url('https://user-images.githubusercontent.com/80110392/221779333-f72f1804-2304-482f-89e4-0ae42233b9b4.png');
+.container {
+    position: relative;
+    width: 420px;
+    border-radius: 4px;
+    height: 420px;
+}
+
+.title {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    font-size: 2em;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.credit {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 0.9em;
+    text-align: left;
 }
 
 .book {
     position: relative;
     perspective: 630px;
     perspective-origin: center 50px;
-    transform: scale(1.8);
+    transform: scale(1.6);
     filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.25));
 }
 
@@ -245,15 +251,5 @@ url('https://user-images.githubusercontent.com/80110392/215578040-f7d0c9b1-7710-
         &:hover {
             filter: grayscale(0%);
         }
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .book {
-        position: relative;
-        perspective: 630px;
-        perspective-origin: center 50px;
-        transform: scale(1);
-        filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.25));
     }
 }

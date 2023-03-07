@@ -20,8 +20,8 @@ const Projects = () => {
       >
         <h1 className="mb-2 text-4xl">My Projects</h1>
         <div className="">
-          {" "}
-          <img src={underline} alt="" className="" />{" "}
+          
+          <img src={underline} alt="" className="" />
         </div>
       </div>
       <div className="relative py-20">

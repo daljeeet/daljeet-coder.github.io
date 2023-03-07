@@ -10,7 +10,7 @@ const Contact = () => {
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="1000"
-        data-aos-easing="ease-in-out" className='w-fit m-auto px-8 mb-6' >
+        data-aos-easing="ease-in-out" className='w-fit m-auto px-8 mb-6 ' >
         <h1 className='mb-2 text-4xl'>Contact Me</h1>
         <div className=''> <img src={underline} alt="" className='' /> </div>
         </div>

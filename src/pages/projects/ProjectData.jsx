@@ -10,7 +10,24 @@ import hot_dsk from "../../images/hot_dsk.gif";
 import hot_mob from "../../images/hot_mob.gif";
 import mail_dsk from "../../images/mail_dsk.gif";
 import mail_mob from "../../images/mail_mob.gif";
+import insta_dsk from "../../images/insta_dsk.gif";
+import insta_mob from "../../images/insta_mob.gif";
   export const data = [
+    {
+      name: "Instabyte",
+      dskImg: insta_dsk,
+      mobImg: insta_mob,
+      website: "https://instabyte.vercel.app/",
+      github: "https://github.com/daljeet-coder/instabyte",
+      features: [
+        "Instabyte is a Social Media application",
+        "A group Project of 2 developers",
+        "Completed in 30 days approx",
+        "Built Using Next.js and TypeScript",
+        "Used NextAPI, Tailwind, Mongoose, MongoDB",
+      ],
+      tackstack:["Next.js","TypeScript","Tailwind CSS","Redux","Firebase"]
+    },
     {
       name: "Virtual-Shop",
       dskImg: vs_dsk,
@@ -18,8 +35,8 @@ import mail_mob from "../../images/mail_mob.gif";
       website: "https://minishop-nine.vercel.app/",
       github: "https://github.com/Sachin1yadav/verdant-plastic-2769",
       features: [
-        "virtual-shop-an E-commerce-website, where a user can shop for various Products",
-        "a group Project of 5 developers",
+        "Virtual-shop-an E-commerce-website, where a user can shop for various Products",
+        "A group Project of 5 developers",
         "Completed in 5 days",
         "Used React for development",
         "Used Chakra UI, Scss, Css for Designing",
@@ -31,8 +48,8 @@ import mail_mob from "../../images/mail_mob.gif";
       name: "Cult Fit - Clone",
       dskImg: cult_dsk,
       mobImg: cult_mob,
-      website: "https://github.com/daljeet-coder/getFit.com-Clone",
-      github: "https://getfitt-22qn418r6-daljeet-coder.vercel.app/",
+      website: "https://getfitt-22qn418r6-daljeet-coder.vercel.app/",
+      github: "https://github.com/daljeet-coder/getFit.com-Clone",
       features: [
         "Cultfit- a website which deals in zym and fitness",
         "Individual Project",

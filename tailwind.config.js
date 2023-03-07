@@ -2,7 +2,7 @@
 const thm = {
   dark:"black",
   light:"",
-  font:"#38bcf6",
+  font:"#F3FFB6",
   gardient1:"#000428",
   gardient2:"#004e92",
   mac:"#325781"

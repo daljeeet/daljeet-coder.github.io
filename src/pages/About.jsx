@@ -20,8 +20,7 @@ const About = () => {
           About Me
         </h1>
         <div className="">
-          {" "}
-          <img src={underline} alt="" className="" />{" "}
+          <img src={underline} alt="" className="" />
         </div>
       </div>
       <div className="relative">
@@ -33,7 +32,7 @@ const About = () => {
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            className="md:w-1/2 w-full mr-4 bg-gradf/40 p-4 md:mb-auto mb-6 "
+            className="md:w-1/2 w-full mr-4 bg-gradf/40 p-4 md:mb-auto mb-6 border-2 border-gray-700 rounded-xl"
           >
             <img
               src={img}
@@ -46,7 +45,7 @@ const About = () => {
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            className="md:w-1/2 w-full bg-gradf/40 p-3 rounded-xl "
+            className="md:w-1/2 w-full bg-gradf/40 p-3 border-2 border-gray-700 rounded-xl "
           >
             <p className="md:w-5/6 md:py-10 m-auto font-semibold leading-normal">
               A passionate, aspiring Fullstack web developer, specializing in
@@ -60,7 +59,7 @@ const About = () => {
               data-aos-delay="50"
               data-aos-duration="3000"
               data-aos-easing="ease-in-out"
-              className={`neon bg-gradf rounded-lg w-fit m-auto overflow-hidden py-1 px-2 text-black`}
+              className={`neon bg-gradf rounded-lg w-fit m-auto overflow-hidden py-1 px-2 text-black border-2 border-gray-700`}
             >
               <NeonBtn text={"Resume"} color={"white"} />
             </div>

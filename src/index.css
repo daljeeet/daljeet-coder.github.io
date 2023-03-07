@@ -18,3 +18,29 @@
     background: url('https://user-images.githubusercontent.com/80110392/213677082-c3388313-9a84-4c19-8ffa-7cc748a2bb51.jpg') center/cover;
     background-attachment: fixed;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #897777;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #152348;
+    border-radius: 20px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
